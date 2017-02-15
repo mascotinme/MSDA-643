@@ -1,0 +1,19 @@
+---
+title: "Recommender System"
+author: "Musa T. GANIYU"
+date: "February 10, 2017"
+output: html_document
+---
+
+```{r}
+options(warn=-1)
+
+suppressMessages(library(recommenderlab))
+
+suppressMessages(library(knitr))
+
+data <- read.csv("C:\\Users\\mascot\\Documents\\GitHub\\MSDA-643\\movies_data_2.csv", sep = ";", header = TRUE)
+df <- as.data.frame(data)
+kable(head(df))
+```
+
