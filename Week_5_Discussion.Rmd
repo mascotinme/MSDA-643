@@ -1,0 +1,30 @@
+---
+title: "DATA 604 Week_5_Discussion"
+author: "Musa T. GANIYU"
+date: "March 3, 2017"
+output: html_document
+---
+
+
+
+
+```{R}
+modulus = 63
+multiplier = 15
+shift = 10
+seed = 60
+lenght = 100
+
+rand <- numeric(modulus)
+rand[i] <- seed
+
+for (i in 1: (modulus-1))
+{
+  rand[i+1] <- (multiplier*rand[i] + shift) %% modulus
+}
+
+rand
+
+hist(rand)
+```
+
